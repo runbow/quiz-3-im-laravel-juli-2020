@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('/proyek', 'ProyekController@index'); //menampilkan semua proyek
 Route::get('/proyek/create', 'ProyekController@create'); //form pengisian proyek
+Route::post('/proyek','ProyekController@store');//save project
 
 Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
 Route::post('/items', 'ItemController@store'); // menyimpan data
