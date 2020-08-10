@@ -7,7 +7,7 @@
       <div class="text-center">
         <h1 class="h4 text-gray-900 mb-4">New projcet</h1>
       </div>
-      <form class="user" action="POST">
+      <form class="user" method="POST" action="/proyek">
         @csrf
         <div class="form-group">
           <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="nama proyek">
@@ -22,9 +22,7 @@
             <input type="date" class="datepicker form-control form-control-user" id="tanggal_deadline" name="tanggal_deadline">
         </div>
         
-        <a href="#" class="btn btn-primary btn-user btn-block">
-          Create
-        </a>
+        <button type="submit" class="btn btn-primary">Submit</button>
         <hr>
         
       </form>

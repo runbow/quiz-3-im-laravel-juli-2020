@@ -24,7 +24,7 @@ class ProyekController extends Controller
         //     'isi'=>'required'
         // ]);
 
-        $query= DB::table('peoyek')->insert([
+        $query= DB::table('proyek')->insert([
             'nama' => $request['nama'],
             'deskripsi' => $request['deskripsi'],
             'tanggal_mulai' => $request['tanggal_mulai'],
