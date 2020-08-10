@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.master');
+    return view('layouts.erd');
 });
+
+Route::get('/proyek', 'ProyekController@index'); //menampilkan semua proyek
 
 Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
 Route::post('/items', 'ItemController@store'); // menyimpan data
