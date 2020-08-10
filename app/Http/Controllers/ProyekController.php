@@ -12,4 +12,8 @@ class ProyekController extends Controller
 
         return view('layouts.index', compact('proyek'));
     }
+
+    public function create(){
+        return view('layouts.create');
+    }
 }

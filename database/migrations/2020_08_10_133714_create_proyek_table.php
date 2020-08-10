@@ -21,7 +21,7 @@ class CreateProyekTable extends Migration
             $table->date('tanggal_deadline');
             $table->boolean('status')->default(0);
 
-            $table->unsignedBigInteger('karyawan_id');
+            $table->unsignedBigInteger('karyawan_id')->nullable();
             $table->foreign('karyawan_id')->references('id')->on('karyawan');
             
         });

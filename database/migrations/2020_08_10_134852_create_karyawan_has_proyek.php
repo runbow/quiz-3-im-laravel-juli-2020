@@ -16,8 +16,8 @@ class CreateKaryawanHasProyek extends Migration
         Schema::create('karyawan_has_proyek', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->unsignedBigInteger('karyawan_id');
-            $table->unsignedBigInteger('proyek_id');
+            $table->unsignedBigInteger('karyawan_id')->nullable();
+            $table->unsignedBigInteger('proyek_id')->nullable();
 
             $table->foreign('karyawan_id')->references('id')->on('karyawan');
             $table->foreign('proyek_id')->references('id')->on('proyek');
